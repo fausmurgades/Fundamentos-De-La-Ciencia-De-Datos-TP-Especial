@@ -9,23 +9,62 @@
 5. Categorizar las variables.
 6. Hacer Analisis Exploratorio.
 
-
 ## Hipotesis planteadas:
-* NOTA: Comparacion entre ciudades y regiones
-* Si se pueden unificar vicios como tabaco / alcohol en una nueva, y poner Si , No, Algunas
-### UniVariadas: 
-* 
 
+- NOTA: Comparacion entre ciudades y regiones
+- Si se pueden unificar vicios como tabaco / alcohol en una nueva, y poner Si , No, Algunas
+
+### UniVariadas:
+
+-
 
 ### BiVariadas
-* Tamaño de ciudad con calidad de salud 
-* Tamaño de ciudad con consumo de alcohol / tabaco
-* 
+
+- Tamaño de ciudad con calidad de salud
+- Tamaño de ciudad con consumo de alcohol / tabaco
+-
 
 ### MultiVariadas
-* Controlando por IMC, sexo y edad el tabaquismo
-actual se asocia con la presencia de hipertension arterial
-* Las personas que viven en suelo de tierra o ladrillo suelto
-declaran peor salud que las que viven en lugares con pisos de ceramica o similar
-* Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica, 
-IMC, consumo de alcohol y tabaco
+
+- Controlando por IMC, sexo y edad el tabaquismo
+  actual se asocia con la presencia de hipertension arterial
+- Las personas que viven en suelo de tierra o ladrillo suelto
+  declaran peor salud que las que viven en lugares con pisos de ceramica o similar
+- Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
+  IMC, consumo de alcohol y tabaco
+  {
+  "alcohol": [
+  {
+  "codigo": "bica03_01",
+  "descripcion": "frec diario de alcohol"
+  }
+  ],
+  "obesidad": [
+  {
+  "codigo": "imc",
+  "descripcion": null
+  }
+  ],
+  "tabaco": [
+  {
+  "codigo": "bita02",
+  "descripcion": "fumo primera vez"
+  },
+  {
+  "codigo": "bita03",
+  "descripcion": "al menos 100 fumados"
+  }
+  ],
+  "actividad_fisica": [
+  {
+  "codigo": "biaf07_m",
+  "descripcion": "tiempo sentado en casa, laburo, clase"
+  }
+  ],
+  "alimentacion": [
+  {
+  "codigo": "bial08",
+  "descripcion": "considera tipo de salud"
+  }
+  ]
+  }
