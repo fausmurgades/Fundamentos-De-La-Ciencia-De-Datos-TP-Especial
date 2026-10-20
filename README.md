@@ -17,20 +17,20 @@
 
 ### UniVariadas:
 
-- Todas las regiones se ven representadas equitativamente en la encuesta.
+- Todas las provincias se ven representadas equitativamente en la encuesta. 30%
 
 ### BiVariadas
 
-- El tamaño de la ciudad influye en que habitos negativos para la salud toma el individuo.
+- El tamaño de la ciudad influye en que habitos negativos para la salud toma el individuo. aglom
 
 Suposicion: todas las ciudades tienen respuesas variadas o bien representadas
 Fuente: Tamaño de ciudad con consumo de alcohol / tabaco (Unificar variables de vicios (toma y no fuma, fuma y no toma, nada, ...))
 
 ### MultiVariadas
 
-- Los habitos diarios de un individuo pueden ayudar a disminuir la aparicion de cancer colorrectal.
+- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, estan relacionados con la aparicion de cancer colorrectal.
 
-- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, ayudan a disminuir la aparicion de cancer colorrectal.
+- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, estan relacionados con diferentes enfermedades principales.
 
 Fuente: Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
 IMC, consumo de alcohol y tabaco
