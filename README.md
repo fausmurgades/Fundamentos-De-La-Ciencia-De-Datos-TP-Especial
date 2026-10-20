@@ -1,70 +1,52 @@
 # Fundamentos-De-La-Ciencia-De-Datos-TP-Especial
 
-## Pasos objetivo
+### > Notas
 
-1. Separar variables en grupos por bloque (Individual y Hogar).
-2. Analizar grupos y variables que tenemos dentro de cada sub-dataframe.
-3. Plantear Hipotesis.
-4. Limpiar solo las Dataframes involucrados y unirlos por su ID.
-5. Categorizar las variables.
-6. Hacer Analisis Exploratorio.
+- NOTA: Comparacion entre ciudades y regiones
+- Chequear cantidad de nulos y borrarlas
+- Elegir con que quedarnos y no todo
+- Si se pueden unificar vicios como tabaco / alcohol en una nueva, y poner Si , No, Algunas
+- A falta de informacion fisica, utilizar lo antropometrico
+- Cambiar las hipotesis para que sean menos especificas y mas amplias.
+  "Los buenos habitos ayudan a **\_**"
+  Nosotros definimos que son buenos habitos, etc
+- Utilizar las regiones para resumir las 29 mil personas
+  PCA por region y ver como te queda
 
 ## Hipotesis planteadas:
 
-- NOTA: Comparacion entre ciudades y regiones
-- Si se pueden unificar vicios como tabaco / alcohol en una nueva, y poner Si , No, Algunas
-
 ### UniVariadas:
 
--
+- Todas las regiones se ven representadas equitativamente en la encuesta.
 
 ### BiVariadas
 
-- Tamaño de ciudad con calidad de salud
-- Tamaño de ciudad con consumo de alcohol / tabaco
--
+- El tamaño de la ciudad influye en que habitos negativos para la salud toma el individuo.
+
+Suposicion: todas las ciudades tienen respuesas variadas o bien representadas
+Fuente: Tamaño de ciudad con consumo de alcohol / tabaco (Unificar variables de vicios (toma y no fuma, fuma y no toma, nada, ...))
 
 ### MultiVariadas
 
-- Controlando por IMC, sexo y edad el tabaquismo
-  actual se asocia con la presencia de hipertension arterial
-- Las personas que viven en suelo de tierra o ladrillo suelto
-  declaran peor salud que las que viven en lugares con pisos de ceramica o similar
-- Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
-  IMC, consumo de alcohol y tabaco
-  {
-  "alcohol": [
-  {
-  "codigo": "bica03_01",
-  "descripcion": "frec diario de alcohol"
-  }
-  ],
-  "obesidad": [
-  {
-  "codigo": "imc",
-  "descripcion": null
-  }
-  ],
-  "tabaco": [
-  {
-  "codigo": "bita02",
-  "descripcion": "fumo primera vez"
-  },
-  {
-  "codigo": "bita03",
-  "descripcion": "al menos 100 fumados"
-  }
-  ],
-  "actividad_fisica": [
-  {
-  "codigo": "biaf07_m",
-  "descripcion": "tiempo sentado en casa, laburo, clase"
-  }
-  ],
-  "alimentacion": [
-  {
-  "codigo": "bial08",
-  "descripcion": "considera tipo de salud"
-  }
-  ]
-  }
+- Los habitos diarios de un individuo pueden ayudar a disminuir la aparicion de cancer colorrectal.
+
+- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, ayudan a disminuir la aparicion de cancer colorrectal.
+
+Fuente: Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
+IMC, consumo de alcohol y tabaco
+
+alcohol:
+bica03_01 (frec diario de alcohol)
+
+obesidad:
+imc
+
+tabaco:
+bita02, (fumo primera vez)
+bita03 (al menos 100 fumados)
+
+actividad fisica:
+biaf07_m (tiempo sentado en casa, laburo, clase)
+
+alimentacion:
+bial08 (considera tipo de salud)
