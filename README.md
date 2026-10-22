@@ -50,3 +50,6 @@ biaf07_m (tiempo sentado en casa, laburo, clase)
 
 alimentacion:
 bial08 (considera tipo de salud)
+
+1. Renombrar algunas (6 approx)
+2. Hacer grafico base para cada una
