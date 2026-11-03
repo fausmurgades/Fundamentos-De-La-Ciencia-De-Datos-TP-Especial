@@ -35,6 +35,27 @@ Fuente: Tamaño de ciudad con consumo de alcohol / tabaco (Unificar variables de
 Fuente: Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
 IMC, consumo de alcohol y tabaco
 
+basicas:
+cod_provincia
+region
+tamanio_aglomerado
+rango_ingreso
+bhch04 (edad)
+bisl06 (horas trabajadas semanal)
+biaf07_m (minutos diarios sentado)
+bita04 (freq fumar tabaco)
+bita05 (marca tabaco)
+bita02, (fumo primera vez)
+bita03 (al menos 100 fumados)
+bial05 (consumo diario de verduras)
+bial06 (porciones diarias de fruta)
+promedio_fv_diario (promedio de consumo diario de fruta o verduras)
+bica03_02(frec diario, ultimos 30 dias, de consumo de alcohol)
+imc_bima (imc)
+imc_categorias_bima
+glucemia_elevada (dicotomica)
+colesterol_elevado (dicotomica)
+
 alcohol:
 bica03_01 (frec diario de alcohol)
 
