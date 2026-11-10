@@ -1,76 +1,52 @@
-# Fundamentos-De-La-Ciencia-De-Datos-TP-Especial
+# TP Especial - Fundamentos de la Ciencia de Datos
 
-### > Notas
+Todo el código está en el notebook `entrega.ipynb`.
 
-- NOTA: Comparacion entre ciudades y regiones
-- Chequear cantidad de nulos y borrarlas
-- Elegir con que quedarnos y no todo
-- Si se pueden unificar vicios como tabaco / alcohol en una nueva, y poner Si , No, Algunas
-- A falta de informacion fisica, utilizar lo antropometrico
-- Cambiar las hipotesis para que sean menos especificas y mas amplias.
-  "Los buenos habitos ayudan a **\_**"
-  Nosotros definimos que son buenos habitos, etc
-- Utilizar las regiones para resumir las 29 mil personas
-  PCA por region y ver como te queda
+## Archivos
 
-## Hipotesis planteadas:
+- `entrega.ipynb`: el notebook con todo el trabajo.
+- `ENFR 2018 - Base usuario.txt`: la base de datos de la encuesta (las columnas están separadas por `|`).
+- `diccionario_registros_enfr2018.xls` y `cuestionario_enfr_2018.pdf`: el diccionario de variables y el cuestionario de la encuesta. El código no los usa, nos sirvieron para entender qué significa cada variable.
+- `requirements.txt`: las librerías que usamos, con sus versiones.
 
-### UniVariadas:
+## Qué hace falta
 
-- Todas las provincias se ven representadas equitativamente en la encuesta. 30%
+- Python 3.14 (nosotros usamos la 3.14.9).
+- Git para clonar el repo. 
 
-### BiVariadas
+## Pasos para correrlo
 
-- El tamaño de la ciudad influye en que habitos negativos para la salud toma el individuo. aglom
+1. Clonar el repo y entrar a la carpeta:
 
-Suposicion: todas las ciudades tienen respuesas variadas o bien representadas
-Fuente: Tamaño de ciudad con consumo de alcohol / tabaco (Unificar variables de vicios (toma y no fuma, fuma y no toma, nada, ...))
+   ```
+   git clone https://github.com/fausmurgades/Fundamentos-De-La-Ciencia-De-Datos-TP-Especial.git
+   cd Fundamentos-De-La-Ciencia-De-Datos-TP-Especial
+   ```
 
-### MultiVariadas
+2. Crear un entorno virtual (en Linux puede ser `python3` en vez de `python`):
 
-- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, estan relacionados con la aparicion de cancer colorrectal.
+   ```
+   python -m venv venv
+   ```
 
-- Los habitos, como una alimentacion completa, actividad fisica regular, un IMC controlado y consumo bajo de alcohol y tabaco, estan relacionados con diferentes enfermedades principales.
+3. Activar el entorno:
 
-Fuente: Cancer colorrectal esta relacionado con habitos de alimentacion, actividad fisica,
-IMC, consumo de alcohol y tabaco
+   - Linux: `source venv/bin/activate`
+   - Windows: `venv\Scripts\activate`
 
-basicas:
-cod_provincia
-region
-tamanio_aglomerado
-rango_ingreso
-bhch04 (edad)
-bisl06 (horas trabajadas semanal)
-biaf07_m (minutos diarios sentado)
-bita04 (freq fumar tabaco)
-bita05 (marca tabaco)
-bita02, (fumo primera vez)
-bita03 (al menos 100 fumados)
-bial05 (consumo diario de verduras)
-bial06 (porciones diarias de fruta)
-promedio_fv_diario (promedio de consumo diario de fruta o verduras)
-bica03_02(frec diario, ultimos 30 dias, de consumo de alcohol)
-imc_bima (imc)
-imc_categorias_bima
-glucemia_elevada (dicotomica)
-colesterol_elevado (dicotomica)
+4. Instalar las librerías:
 
-alcohol:
-bica03_01 (frec diario de alcohol)
+   ```
+   pip install -r requirements.txt
+   ```
 
-obesidad:
-imc
+5. Abrir el notebook (Jupyter ya se instala con el paso anterior):
 
-tabaco:
-bita02, (fumo primera vez)
-bita03 (al menos 100 fumados)
+   ```
+   jupyter lab entrega.ipynb
+   ```
 
-actividad fisica:
-biaf07_m (tiempo sentado en casa, laburo, clase)
+   También se puede abrir con VS Code, eligiendo como kernel el Python de la carpeta `venv`.
 
-alimentacion:
-bial08 (considera tipo de salud)
+6. Correr todas las celdas en orden, de arriba para abajo.
 
-1. Renombrar algunas (6 approx)
-2. Hacer grafico base para cada una
